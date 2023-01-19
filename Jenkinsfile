@@ -23,6 +23,7 @@ pipeline{
                 echo 'Test stage'
                 sh '''
                 echo 'Testing stuff ....'
+                python3 main.py
                 '''
             }
         }
