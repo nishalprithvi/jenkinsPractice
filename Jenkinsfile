@@ -35,5 +35,12 @@ pipeline{
                 '''
             }
         }
+        stage('Build docker image'){
+            steps {
+                script {
+                    sh 'docker build -t prithvi-python .'
+                }
+            }
+        }
     }
 }
