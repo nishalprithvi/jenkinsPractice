@@ -38,7 +38,7 @@ pipeline{
         stage('Build docker image'){
             steps {
                 script {
-                    sh 'docker build -t prithvi-python .'
+                    sh 'docker build -t prithvi-python -f Dockerfile.dockerfile'
                 }
             }
         }
